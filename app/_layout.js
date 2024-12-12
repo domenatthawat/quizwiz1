@@ -48,6 +48,26 @@ export default function Layout() {
           title: "Library",
         }}
       />
+
+      <Tabs.Screen
+        name="settings"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
+          title: "Settings",
+        }}
+      />
+
+      <Tabs.Screen
+        name="profile"
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-circle" size={size} color={color} />
+          ),
+          title: "Profile",
+  }}
+/>
     </Tabs>
   );
 }
